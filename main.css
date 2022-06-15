@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-light-gray);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 60%;
+  display: flex;
+  height: 60%;
+}
+div {
+  width: 33%;
+  padding: 45px;
+  font-size: var(--font-size);
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  padding: 25px 20px;
+}
+div h1 {
+  font-family: "Big Shoulders Display", cursive;
+  padding: 20px;
+}
+
+div p {
+  font-size: 0.9em;
+  line-height: 20px;
+  padding: 10px 20px 20px;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+  border-radius: 0.5em 0 0 0.5em;
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+button {
+  margin: 40px 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.sedans button {
+  color: var(--bright-orange);
+}
+.sedans button:hover {
+  background-color: transparent;
+  color: var(--transparent-white);
+  border: 2px solid var(--transparent-white);
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.suvs button:hover {
+  background-color: transparent;
+  color: var(--transparent-white);
+  border: 2px solid var(--transparent-white);
+  cursor: pointer;
+}
+
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+.luxury button:hover {
+  background-color: transparent;
+  color: var(--transparent-white);
+  border: 2px solid var(--transparent-white);
+}
+
+img {
+  transform: scale(0.9);
+  margin-left: 19px;
+}
+
+a{
+    position: absolute;
+    top: 0%;
+    text-decoration: none;
+    font-family: "Big Shoulders Display", cursive;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100vw;
+
+  }
+  main {
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  div {
+    width: 100%;
+  }
+  .sedans {
+    border-radius: 0;
+  }
+
+  .luxury {
+    border-radius: 0;
+  }
+
+  
+
+}
